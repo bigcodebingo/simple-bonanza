@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="sweet_bonanza.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=PT+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <title>Sweet Bonanza</title>
+</head>
+<body>
+    <div class="back"></div>
+    <div class="menu"></div>
+    <div class="logo">
+        <img src="back/logo.png" alt="" width="300" loop="false">
+    </div>
+    <div class="buttons_flex">
+        <button id="startButton"class="design" onclick="start()"><p class="text">ИГРАТЬ<br><span class="highlight"></span></p></button>
+        <button id="rules"class="design" onclick="show_rules()"><p class="text">Правила игры<br><span class="highlight"></span></p></button>
+        <div class="design1"><p id="win" class="text" style="margin-top: 10px; color: white; font-size: 1.5rem;"><span class="highlight"></span></p></div>
+    </div>
+    <div class="border">
+    <div class="board">
+        <div class="board_table">
+            <div class="board_row">
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+            </div>
+            <div class="board_row">  
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+            </div>
+            <div class="board_row">
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+            </div>
+            <div class="board_row">
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+            </div>
+            <div class="board_row">
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+            <div class="lines">
+                <div class="line"></div>
+            </div>
+            <div class="board_row">
+                <div class="circle1"></div>
+                <div class="circle2" ></div>
+                <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div>
+            </div>
+        </div>
+    </div>
+    <div class="extraspins"><p class='text' style="color: yellow; margin-top: 23px;">+5<br>Бесплатных вращений</p></div>
+    <div class="result">
+        <p class="text_win"style="margin: 0;font-size: 4.5rem;margin-top:-10px;background: linear-gradient(to top,#ff8c00, #ffd700);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;">ПОЗДРАВЛЯЕМ!</p>
+        <p class="text_win" style="color: rgb(96, 205, 241); margin-top: 50px; background: linear-gradient(to top, #87CEEB, #4682B4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;">ВЫ ВЫИГРАЛИ</p>
+        <div class="amount">
+            <img src="amount.png" alt="" width="500" loop="false" style="margin-top: -30px">
+            <p class="text_win"id='babki'style="margin-top: -85px; font-size: 3.0rem;">1000000₽</p>
+        </div>
+        <p class="text_win" id="totalspins"style="color: rgb(96, 205, 241); margin: 0; background: linear-gradient(to top, #87CEEB, #4682B4);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; text-align: center;font-size: 2.7rem;margin-top: 50px;">В 10 БЕСПЛАТНЫХ ВРАЩЕНИЯХ</p>
+        <p class="text_win"style="font-size: 1.5rem; color=white;">НАЖМИТЕ ГДЕ-НИБУДЬ ЧТОБЫ ПРОДОЛЖИТЬ</p>
+    </div>
+    <div class="square">
+        <p class="rules_text"style="text-align: center">Правила игры "Sweet Bonanza"<br><br></p>
+        <p class="rules_text" style="font-size: 0.8em;padding-left: 15px;">Символы оплачиваются в любом месте экрана. Общее количество одинаковых символов на экране в конце спина определяет сумму выигрыша.</p><br>
+        <div class="fruit_flex">
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/heart.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽400, 10-11 ₽200, 8-9 ₽80</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/purple.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽200, 10-11 ₽80, 8-9 ₽20</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/green.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽120, 10-11 ₽40, 8-9 ₽16</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/blue.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽96, 10-11 ₽16, 8-9 ₽12</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/apple.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽80, 10-11 ₽12, 8-9 ₽8</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/plum.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽64, 10-11 ₽10, 8-9 ₽6</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/watermelon.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽40, 10-11 ₽8, 8-9 ₽4</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/blueberry.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽32, 10-11 ₽7, 8-9 ₽3</p>
+            </div>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/banan.PNG);"></div>
+                <p class="rules_text"style="font-size: 0.8em">- 12+ ₽16, 10-11 ₽6, 8-9 ₽2</p>
+            </div>
+            <br>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/lolipop.PNG);width: 50px;"></div>
+                <p class="rules_text"style="font-size: 0.8em;padding-left: 10px">- Этот символ - Scatter, платит в любой позиции. 6 ₽800, 5 ₽40, 4 ₽24. Всякий раз, когда 3 или более символов Scatter появляются во время раунда, присуждается 5 дополнительных бесплатных вращений.</p>
+            </div>
+            <br>
+            <div class="fruit_row">
+                <div class="fruit_in_rule"style="background-image: url(fruits/clear_bomb.PNG);width: 80px;"></div>
+                <p class="rules_text"style="font-size: 0.8em; padding-left: 10px">- Это символ множителя, появляется на барабанах и остается на экране до конца последовательности падений. При выпадении символ принимает случайное значение множителя 2х, 3х, 4х, 5х, 6х, 8х, 10х, 12х, 15х, 20х, 25х, 50х и 100х. Когда последовательность падений заканчивается, значения символов на экране суммируются, и общая сумма выигрыша за последовательность умножается на финальное значение.</p>
+            </div>
+        </div>
+        <br>
+        <p class="rules_text"style="font-size: 0.8em; padding-left:35px">После каждого спина выигрышные комбинации оплачиваются и исчезают, а на пустые позиции падают новые символы. Падение продолжится до тех пор, пока не останется выигрышных комбинаций в результате падения. Ограничений по количеству падений нет. Все выигрыши добавляются к балансу игрока после того, как все падения, случившиеся в результате базового спина, были сыграны.</p>
+        
+    </div>
+    <p id="spins"></p>
+</div>
+<script src="start.js"></script>
+</body>
+</html> 
