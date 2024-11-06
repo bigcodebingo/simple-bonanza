@@ -1,0 +1,790 @@
+@media (max-height: 862px){
+  body {
+    margin: 0;
+}
+.back {
+    width: 100%;
+    height: 713px;
+    background-image: url(back/back_with.jpg);
+    background-size: cover;
+}
+.menu{
+    width: 230px;
+    height: 100px;
+    background-color: rgb(196, 93, 192);
+    margin-top: -658px;
+    margin-left: 50px;
+    border-radius: 30px;
+    border-right: 8px solid rgb(137, 13, 135);
+    border-bottom: 8px solid rgb(137, 13, 135);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.logo{
+    margin-top: -175px;
+    margin-left: 27px;
+    margin-bottom: 50px;
+}
+.border {
+    width: 900px;
+    position: absolute;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 360px;
+    background: repeating-linear-gradient(45deg, rgb(230, 77, 77), rgb(230, 77, 77) 20px, white 20px, white 40px);
+    border-radius: 30px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.board{
+    position: absolute;
+    width: 880px;
+    height: 580px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 10px;
+    background-image: url(back/soap_back.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.board_table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+.board_row{
+    display: flex;
+    flex-direction: column;
+}
+.lines{
+    width: 40px;
+    height: 580px;
+    background-color: transparent;
+}
+.line{
+    width: 5px;
+    height: 540px;
+    background: linear-gradient(to bottom, rgba(140, 132, 132, 0), rgb(160, 151, 151), rgba(144, 136, 136, 0)); 
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes circle1_fall {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: 556px;
+  }
+}
+  @keyframes circle2_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(561px); 
+    }
+  }
+  @keyframes circle3_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(566px); 
+    }
+  }
+  @keyframes circle4_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(571px); 
+    }
+  }
+  @keyframes circle5_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(575px); 
+    }
+  }
+  @keyframes circle1_fall2 {
+    0% {
+      top: 556px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle2_fall2 {
+    0% {
+      top: 561px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle3_fall2 {
+    0% {
+      top: 566px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle4_fall2 {
+    0% {
+      top: 571px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle5_fall2 {
+    0% {
+      top: 575px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+      top: 556px;
+      
+    }
+    to {
+      transform: rotate(720deg);
+      top: 1256px;
+    }
+  }
+  .circle1 {
+    margin-top: -568px;
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle2{
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; 
+  }
+  .circle3 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle4 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle5 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle1.animate {
+    animation: circle1_fall 0.7s forwards;
+  }
+  .circle2.animate {
+    animation: circle2_fall 0.7s forwards;
+  }
+  .circle3.animate {
+    animation: circle3_fall 0.7s forwards;
+  }
+  .circle4.animate {
+    animation: circle4_fall 0.7s forwards;
+  }
+  .circle5.animate {
+    animation: circle5_fall 0.7s forwards;
+  }
+
+  .circle1.animate2 {
+    animation: circle1_fall2 0.7s forwards;
+  }
+  .circle2.animate2 {
+    animation: circle2_fall2 0.7s forwards;
+  }
+  .circle3.animate2 {
+    animation: circle3_fall2 0.7s forwards;
+  }
+  .circle4.animate2 {
+    animation: circle4_fall2 0.7s forwards;
+  }
+  .circle5.animate2 {
+    animation: circle5_fall2 0.7s forwards;
+  }
+
+  .circle1.animate3, .circle2.animate3, .circle3.animate3, .circle4.animate3, .circle5.animate3 {
+  animation: rotate360 2s forwards;
+}
+.buttons_flex{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.design1{
+  margin-left: 7px;
+  background-image: url(back/win_back.png);
+  cursor: pointer;
+  width: 305px;
+  height: 105px;
+  text-align: center;
+  border: 8px solid rgb(174, 5, 138);
+  border-radius: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.design1.show{
+  opacity: 1;
+}
+.design{
+    margin-left: 43px;
+    border: none;
+    background-image: url(back/rules_back.png);
+    border-right: 8px solid rgb(71, 11, 71);
+    border-bottom: 8px solid rgb(71, 11, 71);
+    cursor: pointer;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.design.clicked{
+    background-color: rgb(124, 13, 119);
+    border: 8px solid rgb(192, 16, 192);
+    
+}
+.design:active{
+  background-color: rgb(124, 13, 119);
+  border: 8px solid rgb(192, 16, 192);
+}
+.design:hover{
+  box-shadow: 0 0 20px 15px white;
+}
+.text{
+    color: rgb(204, 169, 240);
+    font-family: Montserrat, sans-serif;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    text-shadow: 
+      -2px -2px 0 purple,
+      2px -2px 0 purple,
+      -2px 2px 0 purple,
+      2px 2px 0 purple; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.text_win{
+  
+  color:white;
+  letter-spacing: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 4.0rem;
+  font-weight: bolder;
+}
+.highlight {
+    font-weight: bold; 
+    font-size: 2rem;
+}
+.square{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 910px;
+  height: 600px;
+  border: 15px solid orchid;
+  border-radius: 30px;
+  background-image: url(back/rules_back.png);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.square.show {
+  opacity: 1;
+}
+.extraspins{
+  width: 310px;
+  height: 170px;
+  background-image: url(back/rules_back.png);
+  border: 5px solid orchid;
+  border-radius: 30px;
+  margin-left: 290px;
+  margin-top: 190px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.amount{
+  background-size: cover;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 910px;
+  height: 600px;
+  border: 10px solid orchid;
+  border-radius: 30px;
+  background-image: url(back/rules_back.png);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.rules_text{
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.0rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.fruit_in_rule{
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+.fruit_flex{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.fruit_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#spins{
+  position: absolute;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.0rem;
+  font-weight: bolder;
+  text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+  margin-top: 600px;
+  margin-left: 145px;
+}
+}
+@media (min-height: 863px){
+  body {
+    margin: 0;
+}
+.back {
+    width: 100%;
+    height: 864px;
+    background-image: url(back/back_with.jpg);
+    background-size: cover;
+}
+.menu{
+    width: 230px;
+    height: 100px;
+    background-color: rgb(196, 93, 192);
+    margin-top: -728px;
+    margin-left: 50px;
+    border-radius: 30px;
+    border-right: 8px solid rgb(137, 13, 135);
+    border-bottom: 8px solid rgb(137, 13, 135);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.logo{
+    margin-top: -175px;
+    margin-left: 27px;
+    margin-bottom: 50px;
+}
+.border {
+    width: 900px;
+    position: absolute;
+    height: 600px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 360px;
+    background: repeating-linear-gradient(45deg, rgb(230, 77, 77), rgb(230, 77, 77) 20px, white 20px, white 40px);
+    border-radius: 30px; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.board{
+    position: absolute;
+    width: 880px;
+    height: 580px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-left: 10px;
+    background-image: url(back/soap_back_full.jpg);
+    background-size: cover;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.board_table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+.board_row{
+    display: flex;
+    flex-direction: column;
+}
+.lines{
+    width: 40px;
+    height: 580px;
+    background-color: transparent;
+}
+.line{
+    width: 5px;
+    height: 540px;
+    background: linear-gradient(to bottom, rgba(140, 132, 132, 0), rgb(160, 151, 151), rgba(144, 136, 136, 0)); 
+    margin-left: auto;
+    margin-right: auto;
+}
+@keyframes circle1_fall {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: 556px;
+  }
+}
+  @keyframes circle2_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(561px); 
+    }
+  }
+  @keyframes circle3_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(566px); 
+    }
+  }
+  @keyframes circle4_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(571px); 
+    }
+  }
+  @keyframes circle5_fall {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(575px); 
+    }
+  }
+  @keyframes circle1_fall2 {
+    0% {
+      top: 556px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle2_fall2 {
+    0% {
+      top: 561px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle3_fall2 {
+    0% {
+      top: 566px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle4_fall2 {
+    0% {
+      top: 571px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes circle5_fall2 {
+    0% {
+      top: 575px;
+    }
+    100% {
+      top: 1175px; 
+    }
+  }
+  @keyframes rotate360 {
+    from {
+      transform: rotate(0deg);
+      top: 556px;
+      
+    }
+    to {
+      transform: rotate(720deg);
+      top: 1256px;
+    }
+  }
+  .circle1 {
+    margin-top: -568px;
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle2{
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative; 
+  }
+  .circle3 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle4 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle5 {
+    width: 110px;
+    height: 110px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .circle1.animate {
+    animation: circle1_fall 0.7s forwards;
+  }
+  .circle2.animate {
+    animation: circle2_fall 0.7s forwards;
+  }
+  .circle3.animate {
+    animation: circle3_fall 0.7s forwards;
+  }
+  .circle4.animate {
+    animation: circle4_fall 0.7s forwards;
+  }
+  .circle5.animate {
+    animation: circle5_fall 0.7s forwards;
+  }
+
+  .circle1.animate2 {
+    animation: circle1_fall2 0.7s forwards;
+  }
+  .circle2.animate2 {
+    animation: circle2_fall2 0.7s forwards;
+  }
+  .circle3.animate2 {
+    animation: circle3_fall2 0.7s forwards;
+  }
+  .circle4.animate2 {
+    animation: circle4_fall2 0.7s forwards;
+  }
+  .circle5.animate2 {
+    animation: circle5_fall2 0.7s forwards;
+  }
+
+  .circle1.animate3, .circle2.animate3, .circle3.animate3, .circle4.animate3, .circle5.animate3 {
+  animation: rotate360 2s forwards;
+}
+.buttons_flex{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.design1{
+  margin-left: 7px;
+  background-image: url(back/win_back.png);
+  cursor: pointer;
+  width: 305px;
+  height: 105px;
+  text-align: center;
+  border: 8px solid rgb(174, 5, 138);
+  border-radius: 30%;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.design1.show{
+  opacity: 1;
+}
+.design{
+    margin-left: 43px;
+    border: none;
+    background-image: url(back/rules_back.png);
+    border-right: 8px solid rgb(71, 11, 71);
+    border-bottom: 8px solid rgb(71, 11, 71);
+    cursor: pointer;
+    width: 250px;
+    height: 100px;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+.design.clicked{
+    background-color: rgb(124, 13, 119);
+    border: 8px solid rgb(192, 16, 192);
+    
+}
+.design:active{
+  background-color: rgb(124, 13, 119);
+  border: 8px solid rgb(192, 16, 192);
+}
+.design:hover{
+  box-shadow: 0 0 20px 15px white;
+}
+.text{
+    color: rgb(204, 169, 240);
+    font-family: Montserrat, sans-serif;
+    font-size: 2.0rem;
+    font-weight: bolder;
+    text-shadow: 
+      -2px -2px 0 purple,
+      2px -2px 0 purple,
+      -2px 2px 0 purple,
+      2px 2px 0 purple; 
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.text_win{
+  
+  color:white;
+  letter-spacing: 4px;
+  font-family: Montserrat, sans-serif;
+  font-size: 4.0rem;
+  font-weight: bolder;
+}
+.highlight {
+    font-weight: bold; 
+    font-size: 2rem;
+}
+.square{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 910px;
+  height: 600px;
+  border: 15px solid orchid;
+  border-radius: 30px;
+  background-image: url(back/rules_back.png);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.square.show {
+  opacity: 1;
+}
+.extraspins{
+  width: 310px;
+  height: 170px;
+  background-image: url(back/rules_back.png);
+  border: 5px solid orchid;
+  border-radius: 30px;
+  margin-left: 290px;
+  margin-top: 190px;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.amount{
+  background-size: cover;
+  width: 500px;
+  height: 100px;
+  text-align: center;
+}
+.result{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 910px;
+  height: 600px;
+  border: 10px solid orchid;
+  border-radius: 30px;
+  background-image: url(back/rules_back.png);
+  opacity: 0;
+  transition: opacity 1s;
+}
+.rules_text{
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.0rem;
+  font-weight: bolder;
+  margin: 0;
+}
+.fruit_in_rule{
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}
+.fruit_flex{
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.fruit_row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#spins{
+  position: absolute;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 2.0rem;
+  font-weight: bolder;
+  text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black; 
+  margin-top: 600px;
+  margin-left: 145px;
+}
+}
